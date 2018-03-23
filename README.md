@@ -8,6 +8,18 @@
 |--------|--------|--------|
 | :clock8: | :white_check_mark: | :x: |
 
+>### 系统核心组件
+| 功能表 | 状态 |
+|--------|--------|
+| asset|:white_check_mark:|
+| 队列|:white_check_mark:|
+| 通知|:white_check_mark:|
+| 国际化（货币，手机号码，语言，政策等）|:white_check_mark:|
+| 邮件|:white_check_mark:|
+| 全局配置|:white_check_mark:|
+| 模块configuration配置|:white_check_mark:|
+| 页面spa|:x:|
+| 页面blcok|:x:|
 
 >### 用户管理系统
 
@@ -74,6 +86,7 @@
 |产品管理|:x:|
 |产品配置|:x:|
 |产品属性|:x:|
+|产品详情缓存|:x:|
 |品牌管理|:x:|
 |供应商管理|:x:|
 |类别管理|:x:|
@@ -81,6 +94,10 @@
 |产品类型|:x:|
 |购物车管理|:x:|
 |结算系统|:x:|
+|订单管理|:x:|
+|发票系统|:x:|
+|优惠管理|:x:|
+|优惠类型驱动|:x:|
 
 
 >### Olivia team
