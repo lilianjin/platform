@@ -13,7 +13,7 @@
 ### 系统核心组件
 | 功能表 | 状态 |版本| 
 |--------|--------|--------|
-| asset|:white_check_mark:| 1.0 |
+| 资源管理器|:white_check_mark:| 1.0 |
 | 队列|:white_check_mark:| 1.0 |
 | 通知|:white_check_mark:| 1.0 |
 | 国际化（货币，手机号码，语言，法律等）|:white_check_mark:| dev-master |
@@ -21,6 +21,11 @@
 | 全局配置|:white_check_mark:| 1.0 |
 | 模块configuration配置|:white_check_mark:| 1.0 |
 | addon管理器|:white_check_mark:| 1.1 |
+| editer在线编辑器|:white_check_mark:| 1.0 |
+| makedown在线编辑器|:white_check_mark:| 1.0 |
+| 所见所得在线编辑器|:clock8:| dev-master |
+| 文件管理器|:clock8:| dev-master |
+| 网格自动驱动器|:clock8:| dev-master |
 
 </br></br>
 ### 用户管理系统
@@ -49,7 +54,7 @@
 | 第三方社区账户绑定和解除绑定|:clock8:|
 | socket，短信，邮件通知|:clock8:|
 
-
+</br></br>
 ### TCS 云存储
 
 ```2018.5月中旬```
