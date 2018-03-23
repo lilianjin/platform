@@ -114,8 +114,17 @@
 |订单回收站|:x:|
 
 </br></br>
+### 支付支持
+| 服务商 | 官网 | App | WEB  | 公众号 | 版本 | 状态 |
+|--------|--------|--------|--------|--------|--------|--------|
+|支付宝|https://alipay.com|:white_check_mark:|:white_check_mark:|:x:|1.0|:white_check_mark:|
+|微信|https://pay.weixin.qq.com|:white_check_mark:|:white_check_mark:|:x:|1.0|:white_check_mark:|
+|银联|https://95516.com|:white_check_mark:|:white_check_mark:|:x:|1.0|:white_check_mark:|
+|Paypal|https://paypal.com|:white_check_mark:|:white_check_mark:|:x:|1.0|:white_check_mark:|
+
+</br></br>
 ### 商务合作
-* 2018年8月发布1.0.0版本 （21106元人名币/年）
+* 2018年8月发布1.0.0版本 （21106元人民币/年）
 * 2018年7月之前订阅费用1000元抵1106（每人最多购买10次）
 * 订阅后 费用以及用户名在此展示
 * 更多定制开发请以下方式与我联系。
