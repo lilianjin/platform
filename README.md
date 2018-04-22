@@ -3,9 +3,22 @@
 一直以来，我们有这样一个想法。让在线商店、线下门店、仓储、客户管理、财务、工作等进行整合。从货物流、现金流更容易管理。
 我们一直尝试去改变这一切！就在2018年，我们开始计划并且致力去改变这一切。让我们的工作更加的愉快和轻松。让一切复杂的事物变得简单。
 
-* Ofcold 隶属深圳市乔诺科技有限公司旗下品牌 *
-* 本系统适用于中大型企业 *
+</br></br>
 
+## 环境
+
+- PHP >= 7.2
+- MYSQL >= 5.7.20
+- NGINX >= 1.12
+- Redis >= 4.0
+
+</br></br>
+
+## 安装
+
+```bash
+$ git clone https://github.com/ofcold/ofcold.com.git
+```
 
 | 开发中 | 已完成 | 等待开发 |
 |--------|--------|--------|
@@ -13,7 +26,7 @@
 
 </br></br>
 ### 系统核心组件
-| 功能表 | 状态 |版本| 
+| 功能表 | 状态 |版本|
 |--------|--------|--------|
 | 资源管理器|:white_check_mark:| 1.0 |
 | 队列|:white_check_mark:| 1.0 |
@@ -129,8 +142,12 @@
 * 订阅后 费用以及用户名在此展示
 * 默认PC自带客户端32000元（永久免费更新和维护）
 * 更多定制开发请以下方式与我联系
-* 投资人请发邮件Emial: bill.li@anomaly.ink
+* 投资人请发邮件Emial: bill.li@ofcold.com
 
+</br></br>
+
+## Copyright
+* Ofcold 隶属深圳市乔诺科技有限公司旗下品牌
 
 </br></br>
 ### Olivia team
@@ -138,11 +155,11 @@
  Olivia Fu
 	<ul>
 		<li>Homepage: https://olivia.ink</li>
-		<li>E-mail: ting.fu@anomaly.ink</li>
+		<li>E-mail: ting.fu@ofcold.com</li>
 	</ul>
-	
+
  Bill Li
  	<ul>
 		<li>Homepage: https://artisanbill.com</li>
-		<li>E-mail: bill.li@anomaly.ink</li>
+		<li>E-mail: bill.li@ofcold.com</li>
 	</ul>
