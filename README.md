@@ -152,14 +152,6 @@ $ git clone https://github.com/ofcold/ofcold.com.git
 </br></br>
 ### Olivia team
 
- Olivia Fu
-	<ul>
-		<li>Homepage: https://olivia.ink</li>
-		<li>E-mail: ting.fu@ofcold.com</li>
-	</ul>
+ * Olivia Fu (E-mail: ting.fu@ofcold.com)
 
- Bill Li
- 	<ul>
-		<li>Homepage: https://artisanbill.com</li>
-		<li>E-mail: bill.li@ofcold.com</li>
-	</ul>
+ * Bill Li (E-mail: bill.li@ofcold.com)
