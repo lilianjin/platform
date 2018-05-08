@@ -51,7 +51,7 @@ $ git clone https://github.com/ofcold/ofcold.com.git
 |--------|--------|
 | 登录（包含其他第三放社区账户）|:white_check_mark:|
 | 注册|:white_check_mark:|
-| 找回密码|:x:|
+| 找回密码|:white_check_mark:|
 | 用户id 相关资料页面（用户隐私，服务条款，账户帮助）|:clock8:|
 | 用户资料管理|:white_check_mark:|
 | 安全中心（密码管理，id更改）|:white_check_mark:|
