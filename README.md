@@ -60,12 +60,12 @@ $ git clone https://github.com/ofcold/ofcold.com.git
 | 账户余额|:x:|
 | 账户充值|:x:|
 | 充值记录管理|:x:|
-| 会员管理|:x:|
+| 会员管理|:white_check_mark:|
 | 用户管理|:white_check_mark:|
 | 用户后台权限|:white_check_mark:|
 | 用户角色管理|:white_check_mark:|
-| 用户地址|:x:|
-| 用户字段自动伸缩|:clock8:|
+| 用户地址|:white_check_mark:|
+| 用户字段自动伸缩|:white_check_mark:|
 | 第三方社区账户绑定和解除绑定|:clock8:|
 | socket，短信，邮件通知|:white_check_mark:|
 
