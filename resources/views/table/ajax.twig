@@ -1,0 +1,53 @@
+{{ asset_add("scripts.js", "root::js/table/table.js") }}
+
+{% if not actions.empty() %}
+    {{ asset_add("scripts.js", "root::js/table/actions.js") }}
+{% endif %}
+
+{% if table.options.sortable %}
+    {{ asset_add("scripts.js", "root::js/table/sortable.js") }}
+{% endif %}
+
+{{ view("table/ajax/heading", {'table': table}) }}
+
+{{ view("table/ajax/views", {'table': table}) }}
+{{ view("table/ajax/filters", {'table': table}) }}
+
+{% if table.rows.empty() %}
+    {% block no_results %}
+        <div class="no-results">
+            <p>
+                {{ trans(table.options.get('no_results_message', 'message.no_results')) }}
+            </p>
+        </div>
+    {% endblock %}
+{% endif %}
+
+{% if not table.rows.empty() %}
+
+    {{ form_open({'url': url_full(), 'class': 'ajax'}) }}
+
+    <div class="table-responsive">
+        <table
+                class="
+                    table ajax table--ajax
+                    {{ table.options.class ?: 'table-condensed table--condensed' }}
+                    {{ table.options.sortable ? 'table--sortable' }}
+                "
+                {{ table.options.sortable ? 'data-sortable' }}
+                {{ html_attributes(table.options.attributes) }}>
+
+            {{ view("table/ajax/header", {'table': table}) }}
+
+            {% block body %}
+                {{ view("table/partials/body", {'table': table}) }}
+            {% endblock %}
+
+        </table>
+    </div>
+
+    {{ view("table/ajax/footer", {'table': table}) }}
+
+    {{ form_close() }}
+
+{% endif %}

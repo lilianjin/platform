@@ -1,0 +1,15 @@
+<div class="btn-group" style="display: inline-block;">
+    <a href="#" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown">
+        {{ field_type.locale }}
+    </a>
+    <div class="dropdown-menu">
+        {% for item in locale().locales.enabledLocales %}
+            <a class="dropdown-item {{ locale_slug() == item.iso ? 'active' }}"
+                href="#"
+                data-toggle="lang" lang="{{ item.iso }}"
+            >
+                {{ item.getTranslatorName() }} ({{ item.alias }})
+            </a>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,27 @@
+{{ asset_add("scripts.js", "root::js/form/form.js") }}
+{{ asset_add("scripts.js", "root::js/form/keyboard.js") }}
+{{ asset_add("scripts.js", "root::js/form/translations.js") }}
+
+{% if not form.options.locked %}
+    {{ asset_add("scripts.js", "root::js/form/lock.js") }}
+{% endif %}
+
+{% block content %}
+
+    <div class="container-fluid">
+
+        {{ form_open({
+            'class': 'form ' ~ form.options.class ,
+            'enctype': 'multipart/form-data',
+            'url': form.options.url ?: url_full()
+        }) }}
+
+        {% include form.options.get('heading', "form/partials/heading") %}
+        {% include "form/partials/layout" %}
+        {% include "form/partials/controls" %}
+
+        {{ form_close() }}
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% if form.fields.empty %}
+    <div class="panel">
+        <div class="panel-body">
+            {{ trans("message.no_fields_available") }}
+        </div>
+    </div>
+{% else %}
+    {% if not form.sections.empty() %}
+        {% for section in form.sections %}
+            {% if section.view %}
+                {% include section.view %}
+            {% elseif section.html %}
+                {{ section.html|raw }}
+            {% elseif section.fields %}
+                {% include "form/ajax/section" %}
+            {% elseif section.tabs %}
+                {% include "form/ajax/tabbed" %}
+            {% endif %}
+        {% endfor %}
+
+    {% else %}
+        {% include "form/ajax/default" %}
+    {% endif %}
+{% endif %}

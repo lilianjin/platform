@@ -1,0 +1,340 @@
+<html>
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>{{ config_get('app.name') }}</title>
+
+    <!-- Favicons -->
+    {{ favicons("ofcold.theme.futing::img/favicon.png") }}
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /*-- reset --*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/*-- start editing from here --*/
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{ vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{  vertical-align:top;}/* vertical align top */
+nav.vertical ul li{ display:block;}/* vertical menu */
+nav.horizontal ul li{   display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*-- end reset --*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url({{ img('theme::img/background-'~ mt_rand(1, 2) ~'.jpg').url|raw }})no-repeat center 0px;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    background-attachment: fixed;
+}
+/*-- main --*/
+.agileinfo-row {
+    width: 65%;
+    margin:0 auto;
+}
+/*-- top-nav --*/
+.futing-exceptions__header-nav {
+    padding-top: 2.5em;
+}
+.futing-exceptions__header-nav-left {
+    float: left;
+}
+.futing-exceptions__header-nav-left h1 {
+    font-size: 2.8em;
+    line-height: .9em;
+    letter-spacing: -2px;
+}
+.futing-exceptions__header-nav-left h1 a {
+    color: #fff;
+}
+/*-- //top-nav --*/
+/*-- //errortext --*/
+.futing-exceptions__errortext{
+    padding-top: 7em;
+    text-align: center;
+}
+.futing-exceptions__errortext h2 {
+    font-size: 6em;
+    color: #fff;
+    line-height: 1.8em;
+    font-family: 'Share Tech Mono', monospace;
+}
+.futing-exceptions__errortext h2  span {
+    background: #fff;
+    color: #21272e;
+    padding: .1em 0.3em;
+    border: 15px solid #21272e;
+}
+.futing-exceptions__errortext h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: .8em 2em;
+    margin: 2em 0 0;
+}
+.futing-exceptions__errortext h3 a {
+    font-size: 0.6em;
+    color: #fff;
+    font-weight: 100;
+    background: #21272e;
+    display: inline-block;
+    padding: .5em 1em;
+    margin-top: 1em;
+    font-family: 'Share Tech Mono', monospace;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    transition:.5s all;
+}
+.futing-exceptions__errortext h3 a:hover {
+    color: #21272e;
+    background: transparent;
+}
+p.futing__adv {
+    font-size: 0.9em;
+    color: #fff;
+    line-height: 3em;
+    font-weight: 300;
+    width: 65%;
+    margin: 2em auto;
+}
+/*-- futing-social__-sicons --*/
+.futing-social__-sicon a {
+    font-size: 1em;
+    color: #fff;
+    margin: 0 .1em;
+    border: 1px solid transparent;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2em;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    transition:.5s all;
+}
+.futing-social__-sicon a i {
+    line-height: 32px;
+}
+.futing-social__-sicon a:hover {
+    color: #21272e;
+    border-color: #21272e;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+/*-- //futing-social__-sicons --*
+/*-- errortext --*/
+/*-- copyright --*/
+.copyright {
+    margin: 4em 0 1em;
+    text-align: center;
+}
+.copyright p {
+    font-size: 1em;
+    color: #fff;
+    line-height:1.8em;
+}
+.copyright p a{
+    color: #fff;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.copyright p a:hover{
+    color: #21272e;
+}
+/*-- //copyright --*/
+/*-- //main --*/
+/*-- responsive-design --*/
+@media(max-width:1280px){
+    p.futing__adv {
+        width: 72%;
+    }
+}
+@media(max-width:1080px){
+    p.futing__adv {
+        width: 94%;
+    }
+    .agileinfo-row {
+        width: 68%;
+    }
+}
+@media(max-width:1024px){
+    .futing-exceptions__errortext h2 {
+        font-size: 5.5em;
+    }
+    .futing-exceptions__errortext h3 {
+        font-size: 1.3em;
+    }
+    .futing-exceptions__errortext {
+        padding-top: 7em;
+    }
+}
+@media(max-width:800px){
+    .agileinfo-row {
+        width: 80%;
+    }
+}
+@media(max-width:736px){
+    .futing-exceptions__header-nav-left h1 {
+        font-size: 2.6em;
+    }
+    .futing-exceptions__errortext h2 {
+        font-size: 4.5em;
+    }
+    .futing-exceptions__errortext h3 {
+        padding: .8em 1em;
+    }
+    .futing-exceptions__header-nav {
+        padding-top: 2em;
+    }
+}
+@media(max-width:640px){
+    .futing-exceptions__errortext h2 span {
+        border-width: 10px;
+    }
+    .futing-exceptions__header-nav-left h1 {
+        font-size: 2.4em;
+    }
+    .futing-exceptions__errortext h3 {
+        font-size: 1.2em;
+    }
+    .agileinfo-row {
+        width: 90%;
+    }
+    .copyright p {
+        padding: 0 1em;
+    }
+}
+@media(max-width:480px){
+    .futing-exceptions__errortext h2 {
+        font-size: 3.5em;
+    }
+    .futing-exceptions__errortext h3 {
+        font-size: 1.1em;
+        line-height: 1.6em;
+        margin: 1.5em 0 0;
+    }
+    .futing-exceptions__errortext h3 a {
+        font-size: 0.7em;
+        padding: .2em 1em;
+        margin-top: 0.5em;
+    }
+    p.futing__adv {
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .copyright p {
+        font-size: 0.9em;
+    }
+}
+@media(max-width:414px){
+    .futing-exceptions__header-nav-left h1 {
+        font-size: 2.2em;
+    }
+    .futing-exceptions__errortext h2 span {
+        border-width: 7px;
+    }
+    .futing-exceptions__errortext h2 span:nth-child(2) {
+        margin: 0 -.1em;
+    }
+    .futing-exceptions__errortext h3 {
+        font-size: 1em;
+        margin: 1em 0 0;
+    }
+}
+@media(max-width:375px){
+    .futing-exceptions__header-nav-left{
+        float: none;
+        text-align: center;
+    }
+    .futing-exceptions__header-nav-left h1 {
+        font-size: 2em;
+    }
+    .futing-exceptions__errortext {
+        padding-top: 3em;
+    }
+    .futing-exceptions__errortext h2 {
+        font-size: 3em;
+    }
+    .copyright {
+        margin: 2em 0 1em;
+    }
+    .futing-social__-sicon a {
+        font-size: 0.9em;
+        width: 28px;
+        height: 28px;
+    }
+}
+@media(max-width:320px) {
+    .futing-exceptions__errortext h2 span:nth-child(2) {
+        margin: 0 -.2em;
+    }
+    .futing-exceptions__errortext h3 {
+        font-size: 0.9em;
+    }
+    .futing-exceptions__errortext h2 {
+        font-size: 2.5em;
+    }
+    .futing-exceptions__errortext h2 span {
+        border-width: 5px;
+    }
+    .futing-exceptions__header-nav {
+        padding-top: 1.5em;
+    }
+}
+</style>
+</head>
+<body>
+
+    <div class="futing-container">
+        <div class="agileinfo-row">
+            <div class="futing-exceptions__header-nav">
+                <div class="futing-exceptions__header-nav-left">
+                    <h1><a href="/">{{ config_get('app.name') }}</a></h1>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="futing-exceptions__errortext">
+                <h2><span>4</span> <span>0</span> <span>1</span></h2>
+                <h3>{{ trans('message.401') }}</h3>
+                <p class="futing__adv">ACCOMPANY YOU THROUGH EVERY IMPORTANT MOMENT IN LIFE.</p>
+                <div class="futing-social__-sicon">
+                    <a href="/"><i class="fa fa-home"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-weibo"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://github.com/ofcoldlab" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            &copy; 2016-{{ 'now'|date('Y') }} {{ config_get('app.name') }} <small>inc</small>. All rights reserved | Design by
+            <a href="https://olivia.ink" target="_blank">Olivia Fu</a>
+        </p>
+    </div>
+</body>
+</html>
