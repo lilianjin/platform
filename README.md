@@ -16,8 +16,22 @@
 
 ## 安装
 
+* Composer
 ```bash
-$ composer create-project ofcold/platform
+	$ composer create-project ofcold/platform
+```
+
+* 初始化环境变量
+```bash
+	$ php ft init
+```
+
+* 数据迁移
+```bash
+	$ php ft install
+
+	# OR
+	$ php ft install --seed
 ```
 
 | 开发中 | 已完成 | 等待开发 |
