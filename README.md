@@ -17,7 +17,7 @@
 ## 安装
 
 ```bash
-$ git clone https://github.com/ofcold/ofcold.com.git
+$ composer create-project ofcold/platform
 ```
 
 | 开发中 | 已完成 | 等待开发 |
